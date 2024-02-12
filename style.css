@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  background-color: hsl(292, 16%, 49%);
+}
+
+.card {
+  display: flex;
+  width: 40em;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 1.5em;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.card__title {
+  display: flex;
+  flex-grow: 1;
+  padding: 1em;
+}
+
+.card__title > h1 {
+  flex: 1;
+  margin-left: 0.5em;
+  font-size: 3.5em;
+}
+
+.card__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+hr {
+  opacity: 20%;
+}
+
+.card__section__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.card__section__box > p {
+  width: 30px;
+  flex: 1;
+  font-weight: 600;
+}
+
+#two,
+#three,
+#four {
+  display: none;
+}
+
+input {
+  position: absolute;
+  width: 30px;
+  height: 31px;
+  opacity: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
